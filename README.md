@@ -15,4 +15,16 @@ downloader.py URL Folder-to-save [optional regex to filter files]
 ## Limitations
 
 * No error handling
-* Nested folders are not supported
+* Regex is applied only to files, not folders
+
+
+## Improvements relative to the base version
+
+* Nested folders are supported: folder structure is mirrored to destination
+* Regex is truly optional now
+* Script is now compatible with beautifulsoup4 4.9.0+
+
+
+## Disclaimer
+
+I made the changes in pursuit of a practical goal and then decided to share them. It works, but code structure has suffered a bit. There is still space for improvements, but for now I'm not planning to work on this.
